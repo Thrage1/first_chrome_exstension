@@ -1,5 +1,22 @@
 {
-  "name": "Creating an Extension",
-  "version": "1.0",
   "manifest_version": 2,
+  "name": "Creating an Override Page",
+  "version": "1.0",
+  "browser_action": {
+      "default_popup": "tab.html",
+      "default_icon": "img.png"
+    },
+  "chrome_url_overrides" : {
+    "newtab": "tab.html"
+  },
+  "commands": {
+  "_execute_browser_action": {
+    "suggested_key": {
+      "default": "Ctrl+Z",
+      "mac": "MacCtrl+Z"
+    },
+    "description": "Opens hello.html"
+  }
+}
+
 }
