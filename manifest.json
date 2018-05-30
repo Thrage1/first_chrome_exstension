@@ -6,9 +6,7 @@
       "default_popup": "tab.html",
       "default_icon": "img.png"
     },
-  "chrome_url_overrides" : {
-    "newtab": "tab.html"
-  },
+  
   "commands": {
   "_execute_browser_action": {
     "suggested_key": {
